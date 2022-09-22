@@ -8,6 +8,7 @@
     tools:context=".ResultFragment">
 
     <ImageView
+        android:contentDescription="loveImage"
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:layout_gravity="center"
@@ -15,6 +16,7 @@
         android:src="@drawable/result_img" />
 
     <TextView
+        android:id="@+id/fName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -30,6 +32,7 @@
         android:src="@drawable/ic_result_heart" />
 
     <TextView
+        android:id="@+id/sName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

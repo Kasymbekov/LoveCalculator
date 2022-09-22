@@ -23,7 +23,11 @@ class ResultFragment : Fragment() {
         val bundle = this.arguments
         if (bundle != null) {
             val result = bundle.getString("percentage", "0")
+            val fName = bundle.getString("f_name", "You")
+            val sName = bundle.getString("s_name", "Me")
             binding.result.text = "$result%"
+            binding.fName.text = "$fName"
+            binding.sName.text = "$sName"
         }
         return binding.root
     }

@@ -47,6 +47,10 @@ class MainFragment : Fragment() {
                             val resFragment = ResultFragment()
                             val bundle = Bundle()
                             bundle.putString("percentage", response.body()?.percentage)
+                            //---
+                            bundle.putString("f_name", firstName.text.toString())
+                            bundle.putString("s_name", secondName.text.toString())
+                            //---
                             resFragment.arguments = bundle
 
                             val fragmentManager = activity?.supportFragmentManager
